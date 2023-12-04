@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+* {
+    box-sizing: border-box;
+}
+
+/* Header styles */
+header {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 15px;
+}
+header div {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding: 3px 0;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    border-radius: 10px;
+    color: white;
+}
+
+/* Here the MAIN starts */
+/* The first section */
+#guardians {
+    width: 100%;
+    height: auto;
+    padding: 75px 15px 65px 35px;
+    background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)), url(./material/Background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: repeat(6, 1fr);
+}
+#guardians-div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    grid-row: 2 / span 4;
+    grid-column: 1 / span 1;
+}
+#guardians-div h1 {
+    margin: 0;
+    font-size: 60px;
+    line-height: 55px;
+    margin-bottom: 13px;
+}
+#guardians-div h4 {
+    margin: 0;
+    font-size: 20px;
+}
+#guardians-div p {
+    margin: 0;
+    margin-bottom: 13px;
+}
+#guardians-div a {
+    width: 60%;
+    height: 25px;
+}
+#guardians-div button {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+/* The second section */
+#mission {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.card {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-rows: repeat(2, 20px) repeat(3, 1fr);
+    border-radius: 5px;
+}
+.card-img {
+    grid-row: 1 / span 2;
+    width: auto;
+    height: 100%;
+}
+.card.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.card.text {
+    width: 100%;
+    height: 100%;
+}
+.card-text h2 {
+    margin: 0;
+}
+.card-text p {
+    margin: 0;
+}
+
+/* @media for smaller sizes */
+
+/* @media for bigger sizes */
+@media only screen and (width: 1024px) {
+    #guardians {
+        grid-template-columns: 20% 80%;
+    }
+}
