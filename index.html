@@ -6,16 +6,17 @@
     <title>Guardians of the Nature</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&family=Righteous&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8906f50d47.js" crossorigin="anonymous"></script>
 </head>
 <body>
     
     <header>
         <div>
-            <a>Who are us?</a>
-            <a>Mission</a>
-            <a>Adventures</a>
+            <a href="#guardians">Who are us?</a>
+            <a href="#mission">Mission</a>
+            <a href="#adventures">Adventures</a>
             <a>Join</a>
         </div>
     </header>
@@ -70,16 +71,18 @@
 
             <h1 class="adventures-title righteous">Our Adventures</h1>
             
-            <div id="adventures-cards-container">
+            <div id="adventures-cards-container" class="container-ad">
                 
-                <div class="adventures-card card-left">
+                <div class="adventures-card card-left" id="card-left-1">
                         <img src="./material/adventures-1.jpg">
                     <div class="adventures-text">
                         <h1>01</h1>
                         <div class="adventures-information">
                             <h2>Landlubbers & Crawlers</h2>
                             <p>Jungle treks, desert crawls, grassland gallops! Meet furry, feathery, scaly wonders - lions, snakes, butterflies, earthworms - and uncover their wild world's secrets.</p>
-                            <a href="">Watch more<i></i></a>
+                            <a href="">Watch more
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -91,19 +94,23 @@
                         <div class="adventures-information">
                             <h2>Ocean Odyssey</h2>
                             <p>Ocean depths, coral kaleidoscopes, freshwater frontiers - dolphins, sharks, octopuses! Bioluminescent secrets, underwater whispers, climate challenges - dive in!</p>
-                            <a href="">Watch more<i></i></a>
+                            <a href="">Watch more
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="adventures-card card-left">
+                <div class="adventures-card card-left" id="card-left-2">
                     <img src="./material/adventures-3.jpg">
                     <div class="adventures-text">
                         <h1>03</h1>
                         <div class="adventures-information">
                             <h2>Flight Fantastic</h2>
                             <p>Soar with eagles, flit with hummingbirds! Witness avian wonders - sky navigation, aerial acrobatics, pollination marvels. Even bats join the adventure - echolocation and night secrets!</p>
-                            <a href="">Watch more<i></i></a>
+                            <a href="">Watch more
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -112,6 +119,7 @@
             
             <button>More Adventures</button>
         </section>
+
     </main>
 </body>
 </html>

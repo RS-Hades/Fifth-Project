@@ -28,12 +28,19 @@ header div {
     gap: 35px;
     justify-content: center;
     border-radius: 15px;
-    color: white;
     font-size: 17px;
 
     animation: header-animation linear both;
     animation-timeline: scroll(root);
     animation-range: 0 200px;
+}
+header a {
+    color: white;
+    text-decoration: none;
+
+    &:visited {
+        color: white;
+    }
 }
 
 @keyframes header-animation {
@@ -165,7 +172,6 @@ header div {
     padding: 50px 20px 40px 20px;
     background-image: linear-gradient(105deg, #097341 32%, rgb(16, 187, 90) 71%);
 }
-
 .adventures-title {
     margin: 0;
     font-size: 50px;
@@ -178,8 +184,7 @@ header div {
     height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 70px;
     gap: 5px;
 }
 .adventures-card {
@@ -226,11 +231,17 @@ header div {
 }
 .adventures-information a {
     font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+.fa-solid {
+    font-size: 12px;
 }
 
 
 .card-left {
     grid-template-columns: 2fr 1fr;
+    align-self: left;
 }
 .card-right {
     grid-template-columns: 1fr 2fr;
@@ -253,11 +264,14 @@ header div {
 #adventures button {
     margin: 0 auto;
     display: block;
-    width: 30%;
+    width: 35%;
     height: auto;
+    padding: 4px 0;
     font-size: 18px;
-    border-radius: 8px;
+    border-radius: 10px;
+    font-weight: 800;
 }
+
 
 /* @media for smaller sizes */
 @media only screen and (max-width: 600px) {
@@ -275,6 +289,11 @@ header div {
     .adventures-text {
         padding: 0 20px;
     }
+    #adventures button {
+        width: 40%;
+        padding: 3px 0;
+        font-size: 17px;
+    }
 }
 @media only screen and (max-width: 570px) {
     #guardians {
@@ -283,6 +302,7 @@ header div {
     }
     #adventures-cards-container {
         gap: 60px;
+        margin-bottom: 70px;
     }
     .adventures-text h1 {
         font-size: 75px;
@@ -338,6 +358,7 @@ header div {
     }
     #adventures-cards-container {
         gap: 65px;
+        margin-bottom: 80px;
     }
     .adventures-card {
         grid-template-columns: 1fr 1fr;
@@ -349,6 +370,11 @@ header div {
         grid-column: 1 / -1;
         grid-row: 1 / -1;
         padding: 45px 0 0 15px;
+    }
+    #adventures button {
+        width: 45%;
+        padding: 3px 0;
+        font-size: 16px;
     }
 }
 @media only screen and (max-width: 460px) {
@@ -377,7 +403,8 @@ header div {
         font-size: 15px;
     }
     #guardians-div a {
-        width: 80%;
+        width: 85%;
+        height: 27px;
     }
     .mission-card {
         width: 90%;
@@ -400,6 +427,7 @@ header div {
     }
     #adventures-cards-container {
         gap: 55px;
+        margin-bottom: 65px;
     }
     .adventures-text h1 {
         font-size: 60px;
@@ -416,6 +444,14 @@ header div {
         margin-bottom: 3px;
     }
     .adventures-information a {
+        font-size: 15px;
+    }
+    .fa-solid {
+        font-size: 10px;
+    }
+    #adventures button {
+        width: 50%;
+        padding: 2px 0;
         font-size: 15px;
     }
 }
@@ -441,7 +477,7 @@ header div {
         font-size: 14px;
     }
     #guardians-div a {
-        width: 90%;
+        width: 95%;
     }
     .mission-card {
         width: 100%;
@@ -463,6 +499,7 @@ header div {
     }
     #adventures-cards-container {
         gap: 45px;
+        margin-bottom: 60px;
     }
     .adventures-text h1 {
         font-size: 50px;
@@ -479,6 +516,11 @@ header div {
         margin-bottom: 3px;
     }
     .adventures-information a {
+        font-size: 14px;
+    }
+    #adventures button {
+        width: 55%;
+        padding: 2px 0;
         font-size: 14px;
     }
 }
@@ -503,8 +545,8 @@ header div {
         font-size: 14px;
     }
     #guardians-div a {
-        width: 95%;
-        height: 20px;
+        width: 105%;
+        height: 25px;
     }
     #guardians-div button {
         font-size: 13px;
@@ -531,6 +573,9 @@ header div {
     }
     .adventures-information a {
         font-size: 13px;
+    }
+    .fa-solid {
+        font-size: 9px;
     }
 }
 @media only screen and (max-width: 330px) {
@@ -559,6 +604,9 @@ header div {
         font-size: 35px;
         line-height: 35px;
     }
+    #adventures-cards-container {
+        margin-bottom: 40px;
+    }
     .mission-card-text h2 {
         font-size: 18px;
     }
@@ -577,6 +625,10 @@ header div {
     .adventures-information a {
         font-size: 12px;
     }
+    #adventures button {
+        width: 60%;
+        font-size: 12px;
+    }
 }
 
 
@@ -585,6 +637,32 @@ header div {
     header div {
         width: 78%;
         gap: 45px;
+    }
+    #guardians-div a {
+        width: 65%;
+        height: 30px;
+    }
+    #guardians-div button {
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    #adventures {
+        padding: 50px 30px 40px 30px;
+    }
+    .adventures-title {
+        font-size: 60px;
+    }
+    #adventures-cards-container {
+        gap: 35px;
+    }
+    .adventures-card {
+        width: 87%;
+    }
+    .card-left {
+        align-self: end;
+    }
+    .card-right {
+        align-self: start;
     }
 }
 @media only screen and (min-width: 900px) {
@@ -616,6 +694,40 @@ header div {
         line-height: 70px;
         margin-bottom: 35px;
     }
+    #adventures {
+        padding: 50px 30px 40px 30px;
+    }
+    .adventures-title {
+        font-size: 65px;
+    }
+    #adventures-cards-container {
+        gap: 15px;
+        margin-bottom: 75px;
+    }
+    .adventures-card {
+        width: 85%;
+    }
+    .adventures-text {
+        padding: 35px;
+    }
+    .adventures-text h1 {
+        font-size: 95px;
+        line-height: 95px;
+    }
+    .adventures-information h2 {
+        font-size: 35px;
+        margin-bottom: 2px;
+    }
+    .adventures-information p {
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+    .adventures-information a {
+        font-size: 17px;
+    }
+    .fa-solid {
+        font-size: 13px;
+    }
 }
 @media only screen and (min-width: 1024px) {
     header div {
@@ -623,5 +735,44 @@ header div {
     }
     #guardians {
         padding: 85px 15px 75px 40px;
+    }
+    #guardians-div a {
+        width: 60%;
+        height: 35px;
+    }
+    #guardians-div button {
+        font-size: 18px;
+    }
+    #adventures {
+        padding: 50px 50px 40px 50px;
+    }
+    .adventures-title {
+        font-size: 70px;
+    }
+    #adventures-cards-container {
+        gap: 25px;
+    }
+    .adventures-card {
+        width: 75%;
+    }
+    .adventures-text {
+        padding: 30px;
+    }
+    .adventures-information h2 {
+        font-size: 40px;
+    }
+    .adventures-information p {
+        font-size: 20px;
+    }
+    .adventures-information a {
+        font-size: 20px;
+    }
+    .fa-solid {
+        font-size: 14px;
+    }
+    #adventures button {
+        width: 30%;
+        padding: 4px 0;
+        font-size: 20px;
     }
 }
