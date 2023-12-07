@@ -2,7 +2,7 @@ body {
     margin: 0;
     box-sizing: border-box;
     background-color: white;
-    font-family: 'Gabarito', sans-serif;;
+    font-family: 'Gabarito', sans-serif;
 }
 * {
     box-sizing: border-box;
@@ -272,6 +272,78 @@ header a {
     font-weight: 800;
 }
 
+/* The fourth section (Join) */
+#join {
+    width: 100%;
+    height: auto;
+    padding: 70px 20px 70px 20px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr;
+    background-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0)), url(./material/Background-2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#join-text {
+    grid-column: 2 / span 1;
+    grid-row: 1 / -1;
+    text-align: right;
+    padding-left: 20px;
+    align-self: center;
+    color: white;
+}
+#join-text h1 {
+    font-size: 80px;
+    margin: 0;
+    line-height: 80px;
+    color: #BD0926;
+}
+#join-text p {
+    margin: 0;
+    font-size: 17px;
+}
+#join-form {
+    width: 75%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(140deg, rgba(0,0,0,1) 40%, rgba(46,46,46,1) 90%);
+    padding: 15px;
+    margin: 10px 0 10px 10px;
+    border-radius: 10px;
+    border: 1px solid #ff2d2d;
+    color: white;
+}
+#join-form h2 {
+    text-align: center;
+    font-size: 21px;
+    margin: 0;
+}
+#join-form form {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+#join-form label {
+    display: block;
+    margin: 10px 0;
+}
+#join-form input, #join-form textarea {
+    width: 100%;
+    margin-top: 3px;
+    background-color: #d6ffcf;
+}
+#join-form input[type="submit"] {
+    width: 40%;
+    font-family: 'Gabarito', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: rgb(16, 187, 90);
+    border: 0;
+    color: white;
+}
 
 /* @media for smaller sizes */
 @media only screen and (max-width: 600px) {
@@ -313,6 +385,17 @@ header a {
     }
     .adventures-information h2 {
         font-size: 26px;
+    }
+    #join-text h1 {
+        font-size: 70px;
+        line-height: 70px;
+    }
+    #join-text p {
+        font-size: 16px;
+    }
+    #join-form {
+        width: 80%;
+        margin: 10px 0 10px 5px;
     }
 }
 @media only screen and (max-width: 515px) {
@@ -375,6 +458,36 @@ header a {
         width: 45%;
         padding: 3px 0;
         font-size: 16px;
+    }
+    #join {
+        padding: 55px 20px 50px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0)), url(./material/Background-2.jpg);
+    }
+    #join-text {
+        text-align: center;
+    }
+    #join-text h1 {
+        font-size: 70px;
+        line-height: 70px;
+    }
+    #join-text p {
+        font-size: 16px;
+    }
+    #join-form {
+        width: 75%;
+        align-self: center;
+    }
+    #join-form h2 {
+        font-size: 20px;
+    }
+    #join-form label {
+        font-size: 15px;
+    }
+    #join-form input[type="submit"] {
+        font-size: 17px;
     }
 }
 @media only screen and (max-width: 460px) {
@@ -637,6 +750,7 @@ header a {
     header div {
         width: 78%;
         gap: 45px;
+        font-size: 18px;
     }
     #guardians-div a {
         width: 65%;
@@ -668,6 +782,7 @@ header a {
 @media only screen and (min-width: 900px) {
     header div {
         gap: 55px;
+        font-size: 19px;
     }
     #guardians-title {
         font-size: 70px;
@@ -732,6 +847,7 @@ header a {
 @media only screen and (min-width: 1024px) {
     header div {
         gap: 75px;
+        font-size: 20px;
     }
     #guardians {
         padding: 85px 15px 75px 40px;
