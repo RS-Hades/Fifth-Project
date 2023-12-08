@@ -578,7 +578,7 @@ footer {
         display: flex;
         flex-direction: column;
         gap: 40px;
-        background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0)), url(./material/Background-2.jpg);
+        background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0)), url(./material/background-2.jpg);
     }
     #join-text {
         text-align: center;
