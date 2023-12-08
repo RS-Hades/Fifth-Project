@@ -37,15 +37,20 @@ header div {
 header a {
     color: white;
     text-decoration: none;
+    transition: 0.2s;
 
     &:visited {
         color: white;
+    }
+
+    &:hover {
+        color: #7efcb5;
     }
 }
 
 @keyframes header-animation {
     to {
-        background-color: #800000;
+        background-color: #730D1F;
     }
 }
 
@@ -96,19 +101,26 @@ header a {
     width: 100%;
     height: 100%;
     border-radius: 5px;
-    background-color: #F20505;
+    background-color: #eb0404;
     color: white;
     font-weight: 700;
     cursor: pointer;
+    transition: 0.5s;
+
+    &:hover {
+        box-shadow: 0px 10px 39px -5px rgba(255,44,44,1);
+        background-color: white;
+        color: #e90404;
+    }
 }
 
 /* The second section (Our Mission)*/
 #mission {
     width: 100%;
     height: auto;
-    padding: 50px 20px 50px 20px;
+    padding: 60px 20px;
     position: relative;
-    background-color: #C7D9AD;
+    background-color: #98D996;
 }
 #mission h1 {
     font-size: 60px;
@@ -117,6 +129,7 @@ header a {
     text-align: center;
     letter-spacing: 2px;
     margin-bottom: 30px;
+    color: #BD0926;
 }
 #mission-cards-container {
     width: 100%;
@@ -131,8 +144,8 @@ header a {
     display: grid;
     grid-template-rows: 100px 1fr;
     border-radius: 10px;
-    background-color: #5e192a;
-    padding: 10px;
+    background-color: #01401C;
+    padding: 12px;
     gap: 10px;
 }
 .mission-card img {
@@ -146,31 +159,32 @@ header a {
 .mission-card-text {
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+    display: grid;
+    gap: 10px;
+    grid-template-rows: 1fr 2px 2fr;
 }
 .mission-card-text h2 {
     margin: 0;
     text-align: center;
-    color: white;
+    color: #ffffff;
+    align-self: center;
 }
 .card-text-line {
-    height: 1px;
+    height: 2px;
     width: 100%;
-    background-color: black;
+    background-color: #BD0926;
 }
 .mission-card-text p {
     margin: 0;
-    color: white;
+    color: rgb(211, 211, 211);
 }
 
 /* The third section (Our Adventures) */
 #adventures {
     width: 100%;
     height: auto;
-    padding: 50px 20px 40px 20px;
-    background-image: linear-gradient(105deg, #097341 32%, rgb(16, 187, 90) 71%);
+    padding: 60px 20px 50px 20px;
+    background-image: linear-gradient(100deg, #0A2611 32%, #033940 71%);
 }
 .adventures-title {
     margin: 0;
@@ -178,6 +192,7 @@ header a {
     margin-bottom: 50px;
     border-bottom: 1px solid ;
     letter-spacing: 2px;
+    color: #F2A649;
 }
 #adventures-cards-container {
     width: 100%;
@@ -198,6 +213,7 @@ header a {
     height: 100%;
     object-fit: cover;
     object-position: center;
+    border-radius: 10px;
 }
 .adventures-text {
     width: 100%;
@@ -224,15 +240,23 @@ header a {
     margin: 0;
     font-size: 30px;
     margin-bottom: 1px;
+    color: #FFF;
 }
 .adventures-information p {
     margin: 0;
     margin-bottom: 10px;
+    color: #F2CA7E;
 }
 .adventures-information a {
     font-size: 16px;
     color: white;
     text-decoration: none;
+    transition: 0.5s;
+
+    &:hover {
+        color: #FDA335;
+        padding-left: 6px;
+    }
 }
 .fa-solid {
     font-size: 12px;
@@ -270,6 +294,16 @@ header a {
     font-size: 18px;
     border-radius: 10px;
     font-weight: 800;
+    background-color: #F2CA7E;
+    border: 0;
+    color: #022601;
+    transition: 0.5s;
+
+    &:hover {
+        box-shadow: 0px 0px 50px 5px #70B85D;
+        background-color: #DE7766;
+        cursor: pointer;
+    }
 }
 
 /* The fourth section (Join) */
@@ -314,11 +348,13 @@ header a {
     border-radius: 10px;
     border: 1px solid #ff2d2d;
     color: white;
+    box-shadow: 0px 0px 39px -5px rgba(255,44,44,1);
 }
 #join-form h2 {
     text-align: center;
     font-size: 21px;
     margin: 0;
+    color: #d3ffca;
 }
 #join-form form {
     width: 100%;
@@ -332,7 +368,7 @@ header a {
 #join-form input, #join-form textarea {
     width: 100%;
     margin-top: 3px;
-    background-color: #d6ffcf;
+    background-color: #c7ffbc;
 }
 #join-form input[type="submit"] {
     width: 40%;
@@ -340,9 +376,67 @@ header a {
     font-weight: 500;
     font-size: 18px;
     border-radius: 10px;
-    background-color: rgb(16, 187, 90);
-    border: 0;
+    background-color: #01401C;
+    border: 1px solid rgb(211, 211, 211);
     color: white;
+    transition: 0.5s;
+    
+    &:hover {
+        color: #005826;
+        border: 1px solid #017533;
+        background-color: rgb(238, 238, 238);
+        cursor: pointer;
+    }
+}
+
+/* The fifth section (legend) */
+#legend {
+    font-family: 'Overlock SC', sans-serif; 
+    text-align: center;
+    font-size: 12px;
+    padding: 10px 20px;
+    background-color: #98d996;
+    color: #7c0303;
+}
+
+/* The styles of the footer */
+footer {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding: 45px 20px;
+    background-color: #4b0a15;
+}
+#author {
+    padding-right: 15px;
+    align-self: center;
+}
+#author h1 {
+    font-size: 26px;
+    color: #98d996;
+    margin: 0;
+}
+#icons {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+    font-size: 36px;
+}
+.fa-brands {
+    color: #98d996;
+    transition: 0.3s;
+
+    &:visited {
+        color: #98d996;
+    }
+
+    &:hover {
+        color: white;
+    }
 }
 
 /* @media for smaller sizes */
@@ -366,11 +460,22 @@ header a {
         padding: 3px 0;
         font-size: 17px;
     }
+    #legend {
+        font-size: 11px;
+        padding: 8px 15px;
+    }
+    #author h1 {
+        font-size: 23px;
+    }
 }
 @media only screen and (max-width: 570px) {
     #guardians {
         background-position: 70% 50%;
         background-image: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 110%), url(./material/Background.jpg);
+    }
+    #guardians-div a {
+        width: 65%;
+        height: 25px;
     }
     #adventures-cards-container {
         gap: 60px;
@@ -397,6 +502,12 @@ header a {
         width: 80%;
         margin: 10px 0 10px 5px;
     }
+    #author h1{
+        font-size: 22px;
+    }
+    #icons {
+        font-size: 32px;
+    }
 }
 @media only screen and (max-width: 515px) {
     header div {
@@ -422,6 +533,9 @@ header a {
     }
     #guardians-div a {
         width: 80%;
+    }
+    #mission {
+        padding: 50px 20px;
     }
     #mission-cards-container {
         grid-template-columns: 1fr;
@@ -468,6 +582,7 @@ header a {
     }
     #join-text {
         text-align: center;
+        padding: 0 5px;
     }
     #join-text h1 {
         font-size: 70px;
@@ -488,6 +603,30 @@ header a {
     }
     #join-form input[type="submit"] {
         font-size: 17px;
+    }
+    #legend {
+        font-size: 10px;
+        padding: 6px 15px;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 10px;
+    }
+    #author {
+        padding-right: 0px;
+        width: 100%;
+        height: auto;
+    }
+    #author h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+    #icons {
+        justify-content: center;
+        gap: 10px;
+        font-size: 30px;
     }
 }
 @media only screen and (max-width: 460px) {
@@ -567,6 +706,19 @@ header a {
         padding: 2px 0;
         font-size: 15px;
     }
+    #join {
+        gap: 45px;
+    }
+    #join-text h1 {
+        font-size: 65px;
+        line-height: 65px;
+    }
+    #join-form h2 {
+        font-size: 19px;
+    }
+    footer {
+        padding: 35px 20px;
+    }
 }
 @media only screen and (max-width: 390px) {
     header div {
@@ -591,6 +743,9 @@ header a {
     }
     #guardians-div a {
         width: 95%;
+    }
+    #mission {
+        padding: 45px 20px;
     }
     .mission-card {
         width: 100%;
@@ -635,6 +790,42 @@ header a {
         width: 55%;
         padding: 2px 0;
         font-size: 14px;
+    }
+    #join {
+        padding: 55px 15px 45px 15px;
+        gap: 35px;
+    }
+    #join-text h1 {
+        font-size: 55px;
+        line-height: 55px;
+    }
+    #join-text p {
+        font-size: 15px;
+    }
+    #join-form {
+        width: 85%;
+    }
+    #join-form h2 {
+        font-size: 17px;
+    }
+    #join-form label {
+        font-size: 14px;
+    }
+    #join-form input[type="submit"] {
+        font-size: 16px;
+    }
+    #legend {
+        font-size: 9px;
+        padding: 4px 10px;
+    }
+    footer {
+        padding: 30px 20px;
+    }
+    #author h1 {
+        font-size: 22px;
+    }
+    #icons {
+        font-size: 26px;
     }
 }
 @media only screen and (max-width: 350px) {
@@ -686,6 +877,9 @@ header a {
     }
     .adventures-information a {
         font-size: 13px;
+    }
+    #legend {
+        padding: 1px 15px;
     }
     .fa-solid {
         font-size: 9px;
@@ -742,6 +936,25 @@ header a {
         width: 60%;
         font-size: 12px;
     }
+    #join-text h1 {
+        font-size: 45px;
+        line-height: 45px;
+    }
+    #join-text p {
+        font-size: 14px;
+    }
+    #join-form h2 {
+        font-size: 16px;
+    }
+    #legend {
+        font-size: 8px;
+    }
+    #author h1 {
+        font-size: 20px;
+    }
+    #icons {
+        font-size: 24px;
+    }
 }
 
 
@@ -778,6 +991,13 @@ header a {
     .card-right {
         align-self: start;
     }
+    #join {
+        padding: 80px 40px 80px 40px;
+    }
+    #icons {
+        gap: 15px;
+        font-size: 40px;
+    }
 }
 @media only screen and (min-width: 900px) {
     header div {
@@ -809,8 +1029,11 @@ header a {
         line-height: 70px;
         margin-bottom: 35px;
     }
+    .mission-card {
+        padding: 15px;
+    }
     #adventures {
-        padding: 50px 30px 40px 30px;
+        padding: 60px 30px 50px 30px;
     }
     .adventures-title {
         font-size: 65px;
@@ -843,6 +1066,41 @@ header a {
     .fa-solid {
         font-size: 13px;
     }
+    #join {
+        padding: 85px 45px 85px 45px;
+    }
+    #join-text h1 {
+        font-size: 90px;
+        line-height: 90px;
+    }
+    #join-text p {
+        font-size: 18px;
+    }
+    #join-form {
+        width: 80%;
+        padding: 20px;
+        border-radius: 15px;
+        border: 2px solid #ff2d2d;
+    }
+    #join-form h2 {
+        font-size: 23px;
+    }
+    #join-form form {
+        margin: 15px 0;
+    }
+    #join-form label {
+        margin: 15px 0;
+    }
+    #join-form input, #join-form textarea {
+        margin-top: 4px;
+        padding: 3px;
+        font-size: 14px;
+    }
+    #join-form input[type="submit"] {
+        width: 32%;
+        font-size: 22px;
+        letter-spacing: 0.5px;
+    }
 }
 @media only screen and (min-width: 1024px) {
     header div {
@@ -859,8 +1117,11 @@ header a {
     #guardians-div button {
         font-size: 18px;
     }
+    .mission-card {
+        padding: 25px;
+    }
     #adventures {
-        padding: 50px 50px 40px 50px;
+        padding: 60px 50px 50px 50px;
     }
     .adventures-title {
         font-size: 70px;
@@ -890,5 +1151,42 @@ header a {
         width: 30%;
         padding: 4px 0;
         font-size: 20px;
+    }
+    #join {
+        padding: 90px 55px;
+    }
+    #join-text h1 {
+        font-size: 110px;
+        line-height: 110px;
+    }
+    #join-text p {
+        font-size: 20px;
+    }
+    #join-form {
+        padding: 25px;
+        border-radius: 20px;
+        border: 3px solid #ff2d2d;
+    }
+    #join-form h2 {
+        font-size: 26px;
+    }
+    #join-form label {
+        font-size: 19px;
+    }
+    #join-form input[type="submit"] {
+        font-size: 24px;
+    }
+    #legend {
+        font-size: 14px;
+    }
+    footer {
+        padding: 30px;
+        background-color: green;
+    }
+    #author h1 {
+        font-size: 32px;
+    }
+    #icons {
+        font-size: 45px;
     }
 }
