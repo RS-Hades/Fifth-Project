@@ -314,7 +314,7 @@ header a {
     display: grid;
     grid-template-columns: 60% 40%;
     grid-template-rows: 1fr;
-    background-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0)), url(./material/Background-2.jpg);
+    background-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0)), url(./material/background-2.jpg);
     background-size: cover;
     background-position: center;
 }
